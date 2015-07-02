@@ -1,0 +1,108 @@
+<html xml:lang="fa" lang="fa" dir="rtl" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>{$mybb->settings['bbname']}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+<meta name="description" content="navid-mh.ir,p4media.ir,themes,mybb,portal,win8"/>
+<meta name="keywords" content="navid-mh.ir,p4media.ir,themes,mybb,portal,win8"/>
+<meta http-equiv="designer" content="http://www.navid-mh.ir"/>
+<meta name="copyright" content="CopyRight(c),Navid M.H,Years,2015"/>
+<link rel="shortcut icon" href="{$mybb->settings['bburl']}/favicon.ico">
+<link rel="shortcut icon" href="{$mybb->settings['bburl']}/favicon.png" type="image/png">
+<link rel="stylesheet" href="portal8/style.css">
+<link rel="stylesheet" href="portal8/responsive.css">
+<!--[if it IE9]><script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><![endif]-->
+<script type="text/javascript" src="portal8/js/loading-win8.js"></script>
+<script> $(document).ready(function(){ $('#win8').fadeOut(9999); }); </script>
+<center id="win8" onclick="this.style.display='none';" style="position:fixed;z-index:5;direction:rtl;top:0;left:0;width:100%;height:100%;background:#FFF;cursor:default">
+<div style="position:fixed;top:20%;left:50%;margin-left:-100px;margin-top:20px;width:200px;">
+<img src="{$mybb->settings['bburl']}/portal8/img/Win8-logo.jpg" width="132" height="132"></img></div>
+<div style="position:fixed;top:76%;left:50%;margin-left:-100px;margin-top:20px;width:200px;">
+<img src="{$mybb->settings['bburl']}/portal8/img/Load8.gif"></img></div></center>
+<script src="portal8/js/code3.js"></script>
+<script src="portal8/js/code2.js"></script>
+<script src="portal8/js/code1.js"></script>
+<center><a href="{$mybb->settings['bburl']}/member.php?action=profile&uid=1">
+<img src="{$mybb->settings['bburl']}/portal8/img/Add.png" title="پـشـتـیـبان"></a></center>
+</head>
+<body style="font-size: 11pt; font-family: Tahoma; text-align: justify; direction: rtl">
+<div class="Metro-Portal8-Title">
+{$mybb->settings['bbname']}
+</div>
+<div class="Metro-Portal8-Search">
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td class="trow1" align="center">
+<form method="post" action="{$mybb->settings['bburl']}/search.php">
+<input type="hidden" name="action" value="do_search"/>
+<input type="hidden" name="postthread" value="1"/>
+<input type="hidden" name="forums" value="all"/>
+<input type="hidden" name="showresults" value="threads"/>
+<input type="text" class="textbox" name="keywords" title="{$lang->search_forums}" value=""/>
+{$gobutton}
+</form><br/>
+</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="Metro-Portal8-Guest">
+<img src="./portal8/img/Guest.jpg" width="34px" height="34px">
+</div>
+<div class="Metro-Portal8-Users">
+<a href="{$mybb->settings['bburl']}/member.php?action=profile" title="پـروفـایـل">
+<img src="{$mybb->user['avatar']}" width="32px" height="32px">
+</a>
+</div>
+<div class="Metro-Portal8-Menu1">
+<a class="Home" href="{$mybb->settings['homeurl']}" title="{$mybb->settings['homename']}">Home</a>
+<a class="Forum" href="{$mybb->settings['bburl']}" title="{$mybb->settings['bbname']}">Forum</a>
+<a class="Help" href="{$mybb->settings['bburl']}/misc.php?action=help" title="{$lang->toplinks_help}">Help</a>
+<a class="LatestThreads" href="{$mybb->settings['bburl']}/portal8/lastthreads.php" onclick="window.open(this.href, '', 'resizable=no,status=no,location=no,toolbar=no,menubar=no,fullscreen=no,scrollbars=no,dependent=no,width=600,height=450'); return false;" title=" آخرین ارسال ها ">LatestThreads</a>
+<a class="Register" href="{$mybb->settings['bburl']}/member.php?action=register" title="{$lang->welcome_register}">Register</a>
+<a class="Login" href="{$mybb->settings['bburl']}/member.php?action=login" onclick="$('#quick_login').modal({ fadeDuration: 250, keepelement: true }); return false;" title="{$lang->welcome_login}">Login</a>
+<a class="Archive" href="<archive_url>" title="{$lang->bottomlinks_litemode}" onclick="window.open(this.href, '', 'resizable=no,status=no,location=no,toolbar=no,menubar=no,fullscreen=no,scrollbars=no,dependent=no,width=600,height=450'); return false;">Archive</a>
+<a class="Contact" href="{$mybb->settings['contactlink']}" title="{$lang->bottomlinks_contactus}">Contact</a>
+<a class="A-Search" href="{$mybb->settings['bburl']}/search.php" title="{$lang->advanced_search}">Search</a>
+<a class="Sitemap" href="{$mybb->settings['bburl']}/syndication.php?portal=1&type=atom1.0" title="{$lang->latest_announcements} (Site Map)">Sitemap</a>
+<a class="RSS" href="{$mybb->settings['bburl']}/syndication.php?portal=1" title="{$lang->latest_announcements} (RSS 2.0)">RSS</a>
+<a class="dl-Chrome" title="دانلود گوگل کروم" href="https://www.google.com/chrome">Chrome</a>
+</div>
+<div class="Metro-Portal8-Menu2">
+<a class="FullStats" href="{$mybb->settings['bburl']}/stats.php" title="{$lang->full_stats}">FullStats</a>
+<a class="MemberList" href="{$mybb->settings['bburl']}/memberlist.php" title="{$lang->toplinks_memberlist}">MemberList</a>
+<a class="Calendar" href="{$mybb->settings['bburl']}/calendar.php" title="{$lang->toplinks_calendar}">Calendar</a>
+</div>
+<div class="Metro-Portal8-LeftMenu"><br/>
+<center>
+<a href="http://www.cloob.com/share/link/add?url={$mybb->settings['bburl']}" target="_blank" rel="nofollow">
+<img src="{$mybb->settings['bburl']}/portal8/img/Cb.png" title="اشتراک گذاری در کلوب"></a><br/>
+  <br/>
+<a href="https://www.facebook.com/sharer/sharer.php?u={$mybb->settings['bburl']}" target="_blank" rel="nofollow">
+<img src="{$mybb->settings['bburl']}/portal8/img/Fb.png" title="اشتراک گذاری در فیسبوک"></a><br/>
+  <br/>
+<a href="https://plus.google.com/share?url={$mybb->settings['bburl']}" target="_blank" rel="nofollow">
+<img src="{$mybb->settings['bburl']}/portal8/img/Gp.png" title="اشتراک گذاری در گوگل پلاس"></a><br/>
+  <br/>
+<a href="{$mybb->settings['bburl']}/mybblog.php" target="_blank">
+<img src="{$mybb->settings['bburl']}/portal8/img/Bg.png" title="بلاگ"></a><br/>
+<br/>
+<a href="{$mybb->settings['bburl']}/upload.php" target="_blank">
+<img src="{$mybb->settings['bburl']}/portal8/img/Uc.png" title="آپلود سنتر"></a><br/>
+  <br/>
+<a href="{$mybb->settings['bburl']}/showteam.php" target="_blank">
+<img src="{$mybb->settings['bburl']}/portal8/img/St.png" title="تیم مدیریتی انجمن"></a><br/>
+<br/>
+<a href="http://www.p4media.ir/app/radio/external.swf" onclick="window.open(this.href, '', 'resizable=no,status=no,location=no,toolbar=no,menubar=no,fullscreen=no,scrollbars=no,dependent=no,width=600,height=450'); return false;" target="_blank"><img src="{$mybb->settings['bburl']}/portal8/img/Mr.png" title="رادیو"></a><br/>
+<br/>
+<script>var enkripsi="'1Ac'02jpgd'1F'00jvvr'1C--uuu,r6ogfkc,kp'00'02vcpegv'1F'00]`ncli'00'1G'2C'1Akoe'02qpa'1F'00,-rmpvcn:-koe-R6O,rle'00'02vkvng'1F'00'w2413'w2411'w2405'w2464'w2465'02'w245G'w24AA'02'w2463'w246:'w2413'00'02'1G'1A-c'1G'1A`p'02-'1G"; teks=""; teksasli="";var panjang;panjang=enkripsi.length;for (i=0;i<panjang;i++){ teks+=String.fromCharCode(enkripsi.charCodeAt(i)^2) }teksasli=unescape(teks);document.write(teksasli);</script>
+</center>
+<br/>
+</div>
+<p class="Metro-Portal8-Cr">
+<script>var enkripsi="'1Ac'02jpgd'1F'00jvvr'1C--uuu,lctkf/oj,kp'00'02vcpegv'1F'00]`ncli'00'02vkvng'1F'00@wknfgp'02'04'02Fgqkelgp'02`{'0A'02Lctkf/OJ,KP'00'1GAmr{Pkejv'02'C;'020237'1A-c'1G"; teks=""; teksasli="";var panjang;panjang=enkripsi.length;for (i=0;i<panjang;i++){ teks+=String.fromCharCode(enkripsi.charCodeAt(i)^2) }teksasli=unescape(teks);document.write(teksasli);</script></p>
+</div>
+</div>
+</body>
+</html>
